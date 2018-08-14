@@ -1,9 +1,6 @@
 # step 0
-def zero_0(x): return lambda x: x
-
-
-def toInt_0(n): return n(lambda x: x + 1)(0)
-
+zero_0 = lambda f: lambda x: x
+toInt_0 = lambda n: n(lambda x: x + 1)(0)
 
 print("Step 0: {}".format(toInt_0(zero_0)))
 print("=======================================\n")
